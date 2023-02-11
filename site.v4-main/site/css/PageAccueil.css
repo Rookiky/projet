@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: georgia;
+}
+
+
+.background-main {
+    margin-top: 0%;
+    padding-bottom: 1.7%;
+    display: flex;
+    display: row;
+    padding-top: 50px; /* à ajouter sur autres pages*/
+}
+
+.bodyLeft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    height: 100%;
+    width: 150%
+}
+
+.title {
+    font-weight: bold;
+    width: 100%;
+    font-size: 4em;
+    margin-left: 2%;
+    margin-top: 2%
+}
+
+.accroche {
+    font-size: 2.5em;
+    margin-left: 10%;
+    margin-top: 1%;
+    font-weight: 540;
+    color:#FF2F45;
+}
+
+.bodydownleft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+    margin-top: 11%;
+    font-size: 2.2em;
+    font-weight: 550;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    color:black;
+}
+
+#titre_produit {
+    padding-top:2%;
+    padding-left:3%;
+}
+
+.produit {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6%;
+    padding-bottom: 5%;
+    color:black;
+}
+
+.produit a {
+    color:black;
+}
+
+.frame {
+    width: 40%;
+    height: 100%;
+    margin-left: 20px;
+}
+.prod_desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    width: 60%;
+}
+
+.arrow_group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.bodyRight {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    font-size: 30px;
+    margin-left: 20%;
+}
+
+.qui-sommes-nous {
+    font-size: 22px;
+    width: 70%;
+    margin-top: 5%;
+    text-align: left;
+    line-height: 32px;
+}
+
+img[alt="chiron"] {
+    border-radius: 50%;
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border: 2px solid black;
+}
+
+#arrow {
+    height: 25px;
+}
+
+#healthpoint {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+#texte_rouge {
+    color:#FF2F45;
+}
+
+.bodyRight >a:hover {
+    text-decoration: underline;
+}
+
+/*Media Queries=================================================*/
+@media screen and (max-width: 800px) {
+    .background-main {
+        flex-direction:column;
+    }
+    .produit {
+        flex-direction:column;
+    }
+    .bodydownleft {
+        width:50%;
+        align-items: center;
+    }
+    .frame {
+        margin-left:30%
+    }
+    #healthpoint {
+        margin-left:8%;
+    }
+    .prod_desc {
+        padding-top:10%;
+        padding-left:20%;
+    }
+    .accroche,.title {
+        width:50%
+    }
+}

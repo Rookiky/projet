@@ -1,0 +1,57 @@
+* {
+    font-family: 'Georgia', sans-serif;
+}
+
+.h2{
+    font-size: 24px;
+    margin-left: 2%;
+    margin-top: 20px;;
+    width : 100%;
+}
+
+.intro{
+    font-size: 16px;
+    margin-left: 2%;
+    margin-top: 20px;;
+    width : 100%;
+}
+
+.refus{
+    font-size: 16px;
+    margin-left: 2%;
+    margin-top: 20px;;
+    width : 100%;
+}
+
+.lien{
+    font-size: 16px;
+    margin-left: 2%;
+    margin-top: 20px;;
+    width : 100%;
+}
+
+.clause{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    width : 100%;
+    font-size: 16px;
+    margin-left: 2%;
+    margin-top: 20px;;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 90vh;
+    justify-content: space-between;
+}
+
+/*
+@media only screen and (max-width: 600px) {
+    .graph{ 
+        width: 100%;
+        padding : 0 10px;
+    }
+}*/

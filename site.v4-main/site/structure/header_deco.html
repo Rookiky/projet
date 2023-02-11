@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="../css/header_deco.css"/> <!--A ajouter à chaque page-->
+    </head>
+
+    <header>
+        <div class="header-left">
+            <a href="../vue/a_propos.php"><img class="logo" src='../img/chironGroup.png'/></a> <!--Le connecter à la page à propos-->
+            <a href="../autres/loginUser.php"><button class="connexion"><francais>S'inscrire/Se connecter</francais><anglais> Register/Log in</anglais></button></a>
+        </div>
+
+        <div class="header-right">
+            <ecart><francais><button class="boutonlangue" onclick="boutonchangeLangue()"><img class="french-flag" alt="flag" src='http://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg'/></button></francais>
+            <anglais><button class="boutonlangue" onclick="boutonchangeLangue()"><img class="french-flag" alt="flag" src='https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg'/></button></anglais></ecart>
+            <a href="../autres/loginUser.php"><img alt="profile" src="../img/user.png"/></a> <!--Connecter à la page de profil-->
+        </div>  
+        <nav> <!--Menu déroulant-->
+            <a href="../autres/PageAccueil.php" ><img class="burger-menu" alt="menu" src="../img/burgerMenu.png"/></a>
+            <ul class="menu_d">
+                <li class="menu_titre"><a href="../autres/PageAccueil.php">Menu</a></li>
+                <li><a href="../autres/formulaire.php"><francais>Nous contacter</francais><anglais>Contact us</anglais></a></li>
+                <li class="menu_fin"><a href="../autres/faq.php">FAQ</a></li>
+            </ul>
+        </nav>      
+    </header>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="../css/header_deco.css"/> <!--A ajouter à chaque page-->
+    </head>
+
+
+    <header>
+
+
+
+        <div class="header-left">
+            <a href="a_propos.php"><img class="logo" src='../img/chironGroup.png'/></a> <!--Le connecter à la page à propos-->
+            <a href="loginUser.php"><button class="connexion">S'inscrire/Se connecter</button></a>
+        </div>
+
+    <?php
+        @$keywords = $_GET["keywords"];
+        @$valider = $_GET["valider"];
+        if (isset($valider) && !empty(trim($keywords))){
+        include("inscriptionUser.php");
+        $res = $pdo->prepare("select surname from registerlogin where surname like '%$keywords%'? ");
+        $res->setFetchMode(PDO::FETCH_ASSOC);
+        $res->execute();
+        $tab = $res->fetchAll();
+        $afficher = 'oui';
+        }
+
+        ?>
+        <div class="recherche">
+           <form name = "fo" method= "get" action = "">
+
+                <input type = "text" name ="keywords" value="<?php echo$keywords?>" placeholder="Mots-clés "/>
+                 <input type ="submit" name ="valider" value = "Rechercher"/>
+             </form>
+             <?php if (@$afficher=='oui') { ?>
+        <div class = "resultats" >
+            <div class = "nbr"><?=count($tab)." ".(count($tab)>1?"résulats trouvés":"résultat trouvé")?></div>
+            <ol>
+                <?php for($i=0;$i<count($tab); $i++){?>
+                <li class="liste"><?php echo $tab[$i]["surname"]?></li>
+                <?php } ?>
+            </ol>
+        </div>
+        <?php } ?>
+
+
+
+        <div class="header-right">
+            <img class="french-flag" alt="flag" src='http://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg'/>
+            <a href="loginUser.php"><img alt="profile" src="../img/user.png"/></a> <!--Connecter à la page de profil-->
+        </div>
+        <nav> <!--Menu déroulant-->
+            <a href="PageAccueil.php" ><img class="burger-menu" alt="menu" src="../img/burgerMenu.png"/></a>
+            <ul class="menu_d">
+                <li class="menu_titre liste"><a href="PageAccueil.php">Menu</a></li>
+                <li class="liste"><a href="donnees.php">Vos données</a></li>
+                <li class="liste"><a href="#">Données publiques</a></li>
+                <li class="liste"><a href="#">Forum</a></li>
+                <li class="liste"><a href="formulaire.php">Nous contacter</a></li>
+                <li class="menu_fin liste"><a href="faq.php">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+</html>

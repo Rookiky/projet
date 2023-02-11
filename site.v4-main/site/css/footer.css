@@ -1,0 +1,55 @@
+
+* {
+    font-family: 'Georgia', sans-serif;
+}
+
+
+.footer {
+    background-color: #FF2F45;
+    width: 100%;
+    left: 0;
+    bottom:0px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    text-decoration:none;
+}
+
+.footer-element {
+    color: white;
+    display: flex;
+    font-size: 1.5em; 
+    text-align: center;
+    width:25%;
+    cursor: pointer;
+    margin-left:10%;
+   
+}
+
+
+footer  a, footer p {
+    text-decoration: none;
+    color:white;
+}
+
+@media screen and (max-width: 800px) {
+   .footer {
+    position: static;
+    font-size: 0.65em;
+   }
+   
+
+}
+
+/*Titres (comme ce css est commun à toutes les pages)*/
+.titre_c {
+    margin-left: 3%;
+    font-size: 2.5em;
+
+}
+
+

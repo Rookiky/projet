@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.background {
+    background-color: #CCDDE7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+}
+
+.box {
+    margin-top: 5%;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+   
+}
+
+.body-inscription {
+    background-color: rgb(227, 224, 224);
+    overflow: hidden;
+}
+
+.inscription-box {
+    background-color:  white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width : 60%;
+    height:  550px;
+    margin-left: 300px;
+   
+}
+
+.inscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+   
+}
+
+#inscription-entreprise {
+    margin-bottom: 10px;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.inscription-box-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.inscription-input {
+    width: 250px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.inscription-user2 {
+    width: 60%;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inscription-user2:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

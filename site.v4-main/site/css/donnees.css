@@ -1,0 +1,80 @@
+.data{
+    font-weight: bold;
+    width: 95%;
+    font-size: 2.5em;
+    margin-left: 2%;
+    margin-top: 20px;;
+    margin-bottom:0;
+}
+
+.cadre{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;;
+    align-items: center;
+}
+
+.cadre svg{
+    padding: 0 20px; 
+}
+
+.cadre_master{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.baton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+    justify-content: space-between;
+}
+
+.graphs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.graph{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width : 501px;
+}
+
+.semaine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width : 100%;
+}
+
+.barre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width : 100%;
+    padding: 0 20px;
+}
+.legende{
+   white-space: pre;
+   width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .graph{ 
+        width: 100%;
+        padding : 0 10px;
+    }
+}
